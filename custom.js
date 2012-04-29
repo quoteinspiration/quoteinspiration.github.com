@@ -13,6 +13,8 @@ $(document).ready(function() {
     datelog = datelog.getMonth()+'/'+datelog.getDate()+'/'+datelog.getFullYear();
     if (quote.length > 0) {
       quoteRef.push({quote:quote, quoteSource:quoteSource, quoteSubmitter:quoteSubmitter, datelog:datelog});
+    } else {
+      alert("I'm sorry but the quote field is empty!");
     }
     $('#quote').val('');
     $('#quote_source').val('');
