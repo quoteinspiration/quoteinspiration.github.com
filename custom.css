@@ -75,7 +75,7 @@ body {
   width: 100%;
   max-width: 924px;
   background-color: #6f9d16;
-  background-image: url("./images/back-greennoise.png");
+  background-image: url("./images/back-greennoise.jpg");
   background-repeat: repeat;  
   border-radius: 4px;
   display: block;
@@ -85,7 +85,7 @@ body {
 .inputs {
   width: 38.2034632034632%;
   background-color: #6f9d16;
-  background-image: url("./images/back-greennoise.png");
+  background-image: url("./images/back-greennoise.jpg");
   background-repeat: repeat;
   float: left;
   border-top-left-radius: 4px;
