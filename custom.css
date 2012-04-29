@@ -57,6 +57,7 @@ table {
 	border-spacing: 0;
 }
 
+
 /*******************************************************/
 
 body {
@@ -96,10 +97,10 @@ body {
 }
 .inputs_wrapper {
   padding: 20px 5.6657223796034%;  
-  text-align: right;
 }
 
 .inputs h1 {
+  text-align: right;
   margin: 60px 0 40px 0;
   font-size: 4.4em;
   font-family: 'Abril Fatface', Georgia, serif;
@@ -118,6 +119,7 @@ body {
 }
 #new_quote {
   text-align: left;
+  overflow: hidden;
 }
 input, textarea#quote {
   width: 100%;
@@ -165,7 +167,7 @@ button:hover {
 }
 
 .footer {
-  margin-top: 100px;
+  margin-top: 50px;
   font-family: 'Merriweather', Georgia, serif;
   font-weight: 400;
   font-size: 1.1em;
@@ -230,4 +232,23 @@ p {
 p.attribution {
   text-align: right;
   font-style: italic;
+}
+
+/*******************************************************/
+
+@media screen and (max-width: 500px) {
+  .inputs {
+    width: 100%;
+  }
+  .inputs h1 {
+    text-align: center;
+    margin: 10px 0;
+  }
+  .footer {
+    margin-top: 10px;
+    font-size: 0.8em;
+  }
+  .main {
+    width: 100%;
+  }
 }
