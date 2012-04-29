@@ -4,11 +4,13 @@ $(document).ready(function() {
 
   $('#quote_submit').click(function () {
     var quote = $('#quote').val();
+    if (quote.length > 600) {
+      quote = quote.substring(0,599);
+    }
     var quoteSource = $('#quote_source').val();
     var quoteSubmitter = $('#quote_submitter').val();
     var datelog = new Date();
     datelog = datelog.getMonth()+'/'+datelog.getDate()+'/'+datelog.getFullYear();
-    console.log(datelog);
     quoteRef.push({quote:quote, quoteSource:quoteSource, quoteSubmitter:quoteSubmitter, datelog:datelog});
     $('#quote').val('');
     $('#quote_source').val('');
