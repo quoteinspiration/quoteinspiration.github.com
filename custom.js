@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  var quoteRef = new Firebase('http://gamma.firebase.com/giffc/');
+  var quoteRef = new Firebase('http://gamma.firebase.com/giffc/quotes');
 
   $('#quote_submit').click(function () {
     var quote = $('#quote').val();
