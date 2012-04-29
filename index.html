@@ -1,0 +1,32 @@
+
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Quote Inspiration of the Day</title>
+  <link rel="stylesheet" type="text/css" href="./custom.css" />
+  <script src="http://static.firebase.com/v0/firebase.js"></script>
+  <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+  <script type="text/javascript" src="./custom.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Abril+Fatface|Merriweather:400' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="content">
+    <div class="left_col">
+      <h1>What inspires you today?</h1>
+      <div id="new_quote">
+        <h2>Add your own daily inspiration</h2>
+        <textarea rows="3" columns="200%" id='quote' placeholder='Paste in your quote'></textarea><br/>
+        <input type='text' id='quote_source' placeholder='Author / Source'>
+        <input type='text' id='quote_submitter' placeholder='Your name / handle (optional)'>
+        <button type="button" ID="quote_submit">Add your quote</button>
+      </div>
+    </div>
+
+    <div class="right_col">
+      <div id="quotes_stream">
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
