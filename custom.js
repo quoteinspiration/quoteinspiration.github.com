@@ -11,7 +11,9 @@ $(document).ready(function() {
     var quoteSubmitter = $('#quote_submitter').val();
     var datelog = new Date();
     datelog = datelog.getMonth()+'/'+datelog.getDate()+'/'+datelog.getFullYear();
-    quoteRef.push({quote:quote, quoteSource:quoteSource, quoteSubmitter:quoteSubmitter, datelog:datelog});
+    if (quote.length > 0) {
+      quoteRef.push({quote:quote, quoteSource:quoteSource, quoteSubmitter:quoteSubmitter, datelog:datelog});
+    }
     $('#quote').val('');
     $('#quote_source').val('');
     $('#quote_submitter').val('');
