@@ -33,12 +33,3 @@ $(document).ready(function() {
   });
 
 });
-/*
- <div class="quote_block">
-    <div class="date_stamp">3/27/2012</div>
-    <p>Sometimes I wish I was alone with no one there
-    Sometimes I think if I runaway or go missing would anyone care
-    I wanna be alone so i dont have to hear anyones voice</p>
-    <p class="attribution">-- anon</p>
-</div>
-*/
