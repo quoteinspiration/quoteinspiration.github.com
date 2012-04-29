@@ -70,16 +70,19 @@ body {
 
 .content {
   margin: 0 auto;
-  width: 924px;
-  height: 100%;
-  background-image: url("./images/back-palenoise.png");
-  background-repeat: repeat;
-  background-color: #fcf9e9;
+  float: none;
+  width: 100%;
+  max-width: 924px;
+  background-color: #6f9d16;
+  background-image: url("./images/back-greennoise.png");
+  background-repeat: repeat;  
   border-radius: 4px;
+  display: block;
+  overflow: hidden;
 }
 
 .left_col {
-  width: 38.202%;
+  width: 38.2034632034632%;
   text-align: right;
   padding: 20px;
   background-color: #6f9d16;
@@ -89,10 +92,6 @@ body {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  height: 100%;
-  box-shadow: 1px -1px 5px 0px rgba(0,0,0,.6);
-  -moz-box-shadow: 1px -1px 5px 0px rgba(0,0,0,.6);
-  -webkit-box-shadow: 1px -1px 5px 0px rgba(0,0,0,.6);
   border-right: 2px dashed #8fab58;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -105,7 +104,7 @@ body {
 .left_col h1 {
   margin: 60px 0 40px 0;
   font-size: 4.4em;
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Abril Fatface', Georgia, serif;
   font-weight: 400;
   color: #ffffff;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
@@ -114,7 +113,7 @@ body {
 }
 .left_col h2 {
   font-size: 1.8em;
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Abril Fatface', Georgia, serif;
   font-weight: 400;
   color: #b8d285;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
@@ -125,7 +124,7 @@ body {
 input, textarea#quote {
   width: 100%;
   padding: 5px;
-  font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', Georgia, serif;
   font-weight: 400;
   font-size: 1.4em;
   color: #686868;
@@ -153,7 +152,7 @@ button {
   -webkit-border-radius: 4px;
   border: none;
   font-size: 1.8em;
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Abril Fatface', Georgia, serif;
   font-weight: 400;
   color: #ffffff;
   float: right;
@@ -168,8 +167,8 @@ button:hover {
 }
 
 .footer {
-  margin-top: 150px;
-  font-family: 'Merriweather', serif;
+  margin-top: 100px;
+  font-family: 'Merriweather', Georgia, serif;
   font-weight: 400;
   font-size: 1.1em;
   color: #b8d285;
@@ -183,19 +182,24 @@ button:hover {
 /* ------------------------------------------ */
 
 .right_col {
-  width: 61.797%;
+  width: 61.7965367965368%;
   padding: 30px 20px 20px 20px;
-  float: left;  
+  float: left;
+  background-image: url("./images/back-palenoise.png");
+  background-repeat: repeat;
+  background-color: #fcf9e9;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  height: 100%;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   -moz-border-top-right-radius: 4px;
   -moz-border-bottom-right-radius: 4px;
   -webkit-border-top-right-radius: 4px;
   -webkit-border-bottom-right-radius: 4px;
+  box-shadow: inset 1px -1px 5px 0px rgba(0,0,0,.6);
+  -moz-box-shadow: inset 1px -1px 5px 0px rgba(0,0,0,.6);
+  -webkit-box-shadow: inset 1px -1px 5px 0px rgba(0,0,0,.6);
 }
 
 #quotes_stream {
@@ -207,24 +211,25 @@ button:hover {
 }
 .quote_block .date_stamp {
   font-size: 1.4em;
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Abril Fatface', Georgia, serif;
   font-weight: 400;
   color: #872a1b;
   padding-bottom: 0.4em;
 }
 p.submitter {
-  font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', Georgia, serif;
   font-weight: 400;
   font-size: 1.2em;
   color: #c1bcbc;
 }
 
 p { 
-  font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', Georgia, serif;
   font-weight: 400;
   font-size: 1.5em;
   color: #686868;
   padding-bottom: 0.4em;
+  line-height: 1.4;
 }
 p.attribution {
   text-align: right;
