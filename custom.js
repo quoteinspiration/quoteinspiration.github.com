@@ -4,23 +4,22 @@ $(document).ready(function() {
 
   $('#quote_submit').click(function () {
     var quote = $('#quote').val();
-    if (quote.length > 600) {
-      quote = quote.substring(0,599);
-    }
     var quoteSource = $('#quote_source').val();
     var quoteSubmitter = $('#quote_submitter').val();
     var datelog = new Date();
     datelog = datelog.getMonth()+'/'+datelog.getDate()+'/'+datelog.getFullYear();
-    if (quote.length > 0) {
+    var quote = errorhandle(quote);
+    if (quote===false) {
+    } else if (quote.length > 0) {
       quoteRef.push({quote:quote, quoteSource:quoteSource, quoteSubmitter:quoteSubmitter, datelog:datelog});
     } else {
       alert("I'm sorry but the quote field is empty!");
     }
+    
     $('#quote').val('');
     $('#quote_source').val('');
     $('#quote_submitter').val('');
   });
-
 
 
     // Add a callback that is triggered for each quote.
@@ -37,3 +36,14 @@ $(document).ready(function() {
   });
 
 });
+
+function errorhandle(quote) {
+  if (quote.search(/<script/i) >= 0) {
+    alert("It appears that you might be trying to submit a script, and tho you might be leetest of them all, we respectfully ask that you refrain from such activities.");
+    quote = false;
+  } 
+  if (quote.length > 600) {
+    quote = quote.substring(0,599);
+  }
+  return quote;
+}
