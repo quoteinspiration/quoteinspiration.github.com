@@ -39,7 +39,7 @@ $(document).ready(function() {
 
 function errorhandle(quote) {
   if (quote.search(/<script/i) >= 0) {
-    alert("It appears that you might be trying to submit a script, and tho you might be leetest of them all, we respectfully ask that you refrain from such activities.");
+    alert("It appears that you might be trying to submit a script,\nand tho you might be leetest of them all, we\nrespectfully ask that you refrain from such activities, yo.");
     quote = false;
   } 
   if (quote.length > 600) {
