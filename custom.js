@@ -7,7 +7,7 @@ $(document).ready(function() {
     var quoteSource = $('#quote_source').val();
     var quoteSubmitter = $('#quote_submitter').val();
     var datelog = new Date();
-    datelog = datelog.getMonth()+'/'+datelog.getDate()+'/'+datelog.getFullYear();
+    datelog = (datelog.getMonth()+1)+'/'+datelog.getDate()+'/'+datelog.getFullYear();
     var quote = errorhandle(quote);
     if (quote===false) {
     } else if (quote.length > 0) {
